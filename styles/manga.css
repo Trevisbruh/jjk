@@ -1,0 +1,83 @@
+.manga-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #31363F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.manga-title {
+    text-align: center;
+    font-size: 40px;    
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+}
+
+.manga-title::before {
+    content: "";
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    height: 0px; /* Adjust the height of the line as needed */
+    background-color: #333; /* Adjust the color of the line as needed */
+    transform: translateY(-50%);
+    margin-bottom: 20px;
+}
+
+
+.manga-list {
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.manga-container {
+    display: none;
+}
+
+.active.manga-container {
+    display: flex;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.manga-container:hover {
+    transform: translateY(-5px);
+    transition: all .2s;
+}
+
+.manga-img {
+    width: 200px;
+    margin-bottom: 0;
+}
+
+.manga-img-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #222831;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.manga-chose-container {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.manga-chose {
+    width: 300px;
+    height: 35px;
+    background-color: #222831;
+    border: none;
+    color: gray;
+    font-size: 20px;
+}

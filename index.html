@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jujutsu Kaisen</title>
+</head>
+<body>
+
+    <section id="home" class="container">
+        <video autoplay loop muted class="background-video">
+            <source src="assets/background-video.mp4" type="video/mp4">
+        </video>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">JUJUTSU KAISEN</h1>
+                <ul class="nav-links">
+                    <li><a onclick="scrollToSection('home')">HOME</a></li>
+                    <li><a onclick="scrollToSection('about')">ABOUT</a></li>
+                    <li><a onclick="scrollToSection('manga')">MANGA</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="title-container">
+            <h1 class="title">JUJUTSU KAISEN</h1>
+            <div class="link-container">
+                <a class="link link-manga" onclick="scrollToSection('manga')">Read Manga</a>
+                <a class="link link-trailer" href="https://www.youtube.com/watch?v=f7R6NA4Yo00">Watch Trailer</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h1 class="about-title">About The Anime</h1>
+            <div class="about-detail-container">
+                <div class="about-first-container">
+                    <h2 class="fact fact1">IMDB Rating - 8.6 / 10</h2>
+                    <h2 class="fact fact3">Chapters - 257</h2>
+                    <h2 class="fact fact5">Japanese</h2>
+                </div>
+                <img class="about-img" src="/assets/about-img.jpg" alt="about-img">
+                <div class="about-second-container">
+                    <h2 class="fact fact2">Written by Gege Akutami</h2>
+                    <h2 class="fact fact4">Volumes - 26</h2>
+                    <h2 class="fact fact6">English</h2>
+                </div>
+            </div>
+            <div class="about-btn-container">
+                <a class="a fact7 green" href="#">Watch Anime</a>
+                <a class="a fact8 red" href="https://www.imdb.com/title/tt12343534/">Check IMDB</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="manga" class="manga-section">
+        <h1 class="manga-title">JUJUTSU KAISEN MANGA</h1>
+        <div class="manga-chose-container">
+            <select id="choosen" class="manga-chose">
+                <option value="all">All</option>
+                <option value="one">Cursed Child Arc</option>
+                <option value="two">Fearsome Womb Arc</option>
+                <option value="three">Vs. Mahito Arc</option>
+                <option value="four">Kyoto Goodwill Event Arc</option>
+                <option value="five">Death Painting Arc</option>
+                <option value="six">Gojo's Past Arc</option>
+                <option value="seven">Shibuya Incident Arc</option>
+                <option value="eight">Itadori's Extermination Arc</option>
+                <option value="nine">Perfect Preparation Arc</option>
+                <option value="ten">Culling Game Arc</option>
+                <option value="eleven">Shinjuku Showdown Arc</option>
+            </select>
+        </div>
+        <div class="manga-list"></div>
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script src="app.js"></script>
+    <Script src="animate.js"></Script>
+</body>
+</html>
